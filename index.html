@@ -88,8 +88,9 @@
     }
     .schedule-table td {
       border: 1px solid #ccc;
-      padding: 16px;
+      padding: 20px 16px;
       vertical-align: top;
+      line-height: 1.8;
     }
     .schedule-table td:first-child {
       font-weight: bold;
@@ -97,7 +98,7 @@
     .schedule-table .time {
       display: block;
       font-weight: normal;
-      margin-top: 4px;
+      margin-top: 8px;
     }
     .schedule-table ul {
       margin: 0;
@@ -113,38 +114,43 @@
     .speaker {
       display: flex;
       align-items: center;
-      gap: 16px;
+      flex-direction: column;
+      text-align: center;
       flex: 1;
     }
     .speaker img {
-      width: 100px;
-      height: 100px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
       border-radius: 50%;
+      margin-bottom: 12px;
     }
     .speaker-text a {
       color: var(--mint);
       font-weight: 600;
       text-decoration: underline;
+      display: block;
+      margin-bottom: 4px;
     }
     .speaker-text {
-      line-height: 1.4;
+      line-height: 1.6;
     }
     .speaker-text .role {
       font-weight: 300;
       font-size: 14px;
     }
     .header {
-      text-align: center;
       margin-bottom: 30px;
     }
     .header h1 {
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 10px;
+      text-align: center;
     }
     .header p {
       margin: 4px 0;
+      text-align: center;
     }
     .header .btn {
       margin-top: 10px;
@@ -154,8 +160,8 @@
       padding: 10px 18px;
       border-radius: 6px;
       text-decoration: none;
-      display: inline-block;
       font-weight: 500;
+      float: right;
     }
   </style>
 </head>
@@ -176,10 +182,10 @@
 
 <main class="main">
   <div class="header">
+    <a class="btn" href="https://icml.cc/virtual/2025/tutorial/40008" target="_blank">ICML 2025 Tutorial</a>
     <h1>Harnessing Low Dimensionality in Diffusion Models</h1>
     <p><strong>Qing Qu    Yuxin Chen    Liyue Shen</strong></p>
     <p>Mon 14 Jul 2025 • 9:30 — 12:00 PDT<br>West Ballroom B</p>
-    <a class="btn" href="https://icml.cc/virtual/2025/tutorial/40008" target="_blank">ICML 2025 Tutorial</a>
   </div>
 
   <section id="schedule" class="section">
@@ -233,21 +239,21 @@
       <div class="speaker">
         <img src="https://qingqu.engin.umich.edu/wp-content/uploads/sites/42/2021/08/AE0E7C9E-9D72-4FDB-9C6B-1D3E19DCCE72_1_105_c.jpeg" alt="Qing Qu">
         <div class="speaker-text">
-          <a href="http://qingqu.engin.umich.edu/" target="_blank">Qing Qu</a><br>
+          <a href="http://qingqu.engin.umich.edu/" target="_blank">Qing Qu</a>
           <span class="role">University of Michigan<br>Assistant Professor</span>
         </div>
       </div>
       <div class="speaker">
         <img src="https://yuxinchen2020.github.io/images/photo_Dec2019.jpg" alt="Yuxin Chen">
         <div class="speaker-text">
-          <a href="https://yuxinchen2020.github.io/" target="_blank">Yuxin Chen</a><br>
+          <a href="https://yuxinchen2020.github.io/" target="_blank">Yuxin Chen</a>
           <span class="role">University of Pennsylvania<br>Associate Professor</span>
         </div>
       </div>
       <div class="speaker">
         <img src="https://liyueshen.engin.umich.edu/wp-content/uploads/sites/74/2023/09/liyueshen03_crop.jpg" alt="Liyue Shen">
         <div class="speaker-text">
-          <a href="https://liyueshen.engin.umich.edu/" target="_blank">Liyue Shen</a><br>
+          <a href="https://liyueshen.engin.umich.edu/" target="_blank">Liyue Shen</a>
           <span class="role">University of Michigan<br>Assistant Professor</span>
         </div>
       </div>
