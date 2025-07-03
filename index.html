@@ -176,7 +176,9 @@
 <body>
 <div class="sidebar" id="sidebar">
   <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
-  <img src="https://icml.cc/static/core/img/icml-navbar-logo.svg" class="logo" alt="ICML Logo">
+  <div onclick="toggleSidebar()" style="cursor: pointer;">
+    <img src="https://icml.cc/static/core/img/icml-navbar-logo.svg" class="logo" alt="ICML Logo">
+  </div>
   <nav>
     <a href="#abstract">🏠 <span>Home</span></a>
     <a href="#schedule">🗓 <span>Schedule</span></a>
