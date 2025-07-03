@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qing Qu – ICML 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mint: #20cfc7;
+      --dark: #1f1f1f;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      display: flex;
+      color: #333;
+    }
+    .sidebar {
+      background: var(--dark);
+      color: white;
+      width: 250px;
+      height: 100vh;
+      padding: 30px 20px;
+      position: fixed;
+      transition: width 0.3s;
+    }
+    .sidebar.collapsed {
+      width: 60px;
+    }
+    .sidebar img.logo {
+      width: 60px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .sidebar.collapsed img.logo {
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      padding: 10px;
+      border-radius: 30px;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+    .sidebar.collapsed nav a span {
+      display: none;
+    }
+    .sidebar nav a:hover {
+      background: var(--mint);
+    }
+    .sidebar hr {
+      border: 0;
+      height: 1px;
+      background: #444;
+      margin: 20px 0;
+    }
+    .main {
+      margin-left: 250px;
+      padding: 60px;
+      flex: 1;
+      max-width: 100%;
+    }
+    .sidebar.collapsed + .main {
+      margin-left: 60px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    img.profile {
+      width: 160px;
+      float: right;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    .figure {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .figure img {
+      max-width: 45%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .papers {
+      margin-top: 40px;
+    }
+    .papers h3 {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    .papers li {
+      margin-bottom: 10px;
+    }
+    .collapsed img.logo-toggle {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+  <img src="https://icml.cc/static/core/img/icml-navbar-logo.svg" class="logo" onclick="toggleSidebar()" alt="ICML Logo">
+  <nav>
+    <a href="index.html">🏠 <span>Home</span></a>
+    <a href="#schedule">🗓 <span>Schedule</span></a>
+    <a href="#speakers">🧑‍🏫 <span>Speakers</span></a>
+    <hr>
+    <a href="qingqu.html">👨‍🔬 <span>Qing Qu</span></a>
+    <a href="#">👨‍🏫 <span>Yuxin Chen</span></a>
+    <a href="#">👩‍🏫 <span>Liyue Shen</span></a>
+  </nav>
+</div>
+
+<main class="main">
+  <h1>Qing Qu (Generalization)</h1>
+  <img class="profile" src="https://qingqu.engin.umich.edu/wp-content/uploads/sites/42/2021/08/AE0E7C9E-9D72-4FDB-9C6B-1D3E19DCCE72_1_105_c.jpeg" alt="Qing Qu">
+  <p><strong>Qing Qu (qingqu@umich.edu)</strong> is an assistant professor in the EECS department at the University of Michigan...
+  [include full paragraph text you posted above]</p>
+
+  <h3>Dr. Qu’s Related Work and Experience:</h3>
+  <p>[include second paragraph about tutorials and awards]</p>
+
+  <div class="figure">
+    <img src="https://your_image_url_for_figure1a.png" alt="Reproducibility">
+    <img src="https://your_image_url_for_figure1b.png" alt="Generalizability">
+  </div>
+  <p><strong>Figure 1:</strong> Co-emergence of reproducibility and generalizability... [caption]</p>
+
+  <div class="papers">
+    <h2>Papers</h2>
+    <h3>Overview Paper:</h3>
+    <ul>
+      <li>1. <strong>Generalization of Diffusion Models</strong>: H Zhang, P Wang, S Chen, Z Zhang, Q Qu. SIAM News</li>
+    </ul>
+
+    <h3>Phenomenon of Generalization:</h3>
+    <ul>
+      <li>2. Zhang et al. <em>The Emergence of Reproducibility...</em> (ICML’24) – Preprint – PDF – BibTex – Slides</li>
+      <li>3. Zhang et al. <em>Understanding Generalization via Probability Flow Distance</em> – arXiv:2505.20123</li>
+    </ul>
+
+    <h3>Theory on Generalization:</h3>
+    <ul>
+      <li>4. Wang et al. <em>Diffusion Models Learn Low-Dimensional...</em> – arXiv:2409.02426</li>
+      <li>5. Li et al. <em>Rethinking the Hidden Gaussian Structure</em> (NeurIPS’24)</li>
+    </ul>
+
+    <h3>Applications/Implications of Generalization:</h3>
+    <ul>
+      <li>6–10. [List remaining papers with similar structure as above]</li>
+    </ul>
+  </div>
+</main>
+
+<script>
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('collapsed');
+  document.querySelector('.main').classList.toggle('collapsed');
+}
+</script>
+</body>
+</html>
