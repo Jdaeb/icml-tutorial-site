@@ -70,10 +70,12 @@
     .main {
       margin-left: 250px;
       padding: 60px;
-      max-width: 1000px;
+      width: calc(100% - 250px);
+      max-width: none;
     }
     .sidebar.collapsed + .main {
       margin-left: 60px;
+      width: calc(100% - 60px);
     }
     .toggle-btn {
       position: absolute;
