@@ -84,32 +84,36 @@
       cursor: pointer;
       display: none; 
     }
-    .section {
-      margin-top: 60px;
-    }
-    .section h2 {
-      margin-bottom: 20px;
-    }
     .schedule-table {
       width: 100%;
       border-collapse: collapse;
-      table-layout: fixed;
+      font-family: Arial, sans-serif;
     }
+
+    .schedule-table th,
     .schedule-table td {
       border: 1px solid #ccc;
-      padding: 20px 16px;
+      padding: 12px;
       vertical-align: top;
-      line-height: 1.8;
-      width: 50%;
+      text-align: left;
+      font-size: 14px;
     }
-    .schedule-table td:first-child {
+    .schedule-table th {
+      background-color: #f8f8f8;
       font-weight: bold;
     }
-    .schedule-table .time {
-      display: block;
-      font-weight: normal;
-      margin-top: 8px;
+    .schedule-table td a {
+      color: blue;
+      text-decoration: underline;
     }
+    .plain-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: decimal;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
     .speakers {
       display: flex;
       justify-content: space-between;
@@ -212,72 +216,85 @@
     <p><strong>(iii) Scientific Applications:</strong> We will advance diffusion models for scientific imaging by improving their flexibility, efficiency, and robustness in solving inverse problems on high-dimensional, high-resolution data. Our focus includes efficient latent and patch-based methods, enhanced data consistency for challenging 3D tasks, and controllable sampling techniques that enforce desired constraints while maintaining sample quality.</p>
   </section>
 
-  <section id="schedule" class="section">
+  <!-- ===================== Workshop Schedule Section ===================== -->
+<section id="schedule" class="section">
   <h2>Workshop Schedule</h2>
   <p>All times in PDT (GMT-7).</p>
-  <table class="schedule-table" border="1" cellspacing="0" cellpadding="8">
-    <tr>
-      <th colspan="2"> </th>
-      <th>Speaker</th>
-      <th>Duration</th>
-      <th>Slides</th>
-    </tr>
-    <tr>
-      <td colspan="2"><strong>Introduction</strong>
-        <ol>
-          <li>Tutorial overview</li>
-          <li>Basics of diffusion models</li>
-        </ol>
-      </td>
-      <td>Qing Qu</td>
-      <td>10 min</td>
-      <td><a href="slides/intro.pdf" target="_blank">PDF</a></td>
-    </tr>
-    <tr>
-      <td colspan="2"><strong>Part I: Generalization of Learning Diffusion Models</strong>
-        <ol>
-          <li>Reproducibility and Generalization</li>
-          <li>Theory and Phase transition of memorization and generalization</li>
-          <li>Quantifying generalization via probability flow distance</li>
-        </ol>
-      </td>
-      <td>Qing Qu</td>
-      <td>45 min</td>
-      <td><a href="slides/generalization.pdf" target="_blank">PDF</a></td>
-    </tr>
-    <tr>
-      <td colspan="2"><strong>Part II: Guaranteed and Efficient Sampling of Diffusion Models</strong>
-        <ol>
-          <li>Non-asymptotic convergence theory</li>
-          <li>Adaptation to low-dimensional structure</li>
-          <li>Acceleration via higher-order approximation</li>
-        </ol>
-      </td>
-      <td>Yuxin Chen</td>
-      <td>45 min</td>
-      <td><a href="slides/sampling.pdf" target="_blank">PDF</a></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Break</strong></td>
-      <td>5 min</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="2"><strong>Part III: From Theory to Scientific Applications</strong>
-        <ol>
-          <li>Efficient Methods for Solving Inverse Problems</li>
-          <li>Generalizability of Learned Image Priors</li>
-          <li>Controllable Generation</li>
-        </ol>
-      </td>
-      <td>Liyue Shen</td>
-      <td>45 min</td>
-      <td><a href="slides/applications.pdf" target="_blank">PDF</a></td>
-    </tr>
-  </table>
+
+  <div class="schedule-container">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th style="width: 120px;">Speaker</th>
+          <th style="width: 90px;">Duration</th>
+          <th style="width: 70px;">Slides</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Introduction</strong>
+            <ol class="plain-list">
+              <li>Tutorial overview</li>
+              <li>Basics of diffusion models</li>
+            </ol>
+          </td>
+          <td>Qing Qu</td>
+          <td>10 min</td>
+          <td><a href="slides/intro.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Part I: Generalization of Learning Diffusion Models</strong>
+            <ol class="plain-list">
+              <li>Reproducibility and Generalization</li>
+              <li>Theory and Phase transition of memorization and generalization</li>
+              <li>Quantifying generalization via probability flow distance</li>
+            </ol>
+          </td>
+          <td>Qing Qu</td>
+          <td>45 min</td>
+          <td><a href="slides/part1.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Part II: Guaranteed and Efficient Sampling of Diffusion Models</strong>
+            <ol class="plain-list">
+              <li>Non-asymptotic convergence theory</li>
+              <li>Adaptation to low-dimensional structure</li>
+              <li>Acceleration via higher-order approximation</li>
+            </ol>
+          </td>
+          <td>Yuxin Chen</td>
+          <td>45 min</td>
+          <td><a href="slides/part2.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <tr>
+          <td><strong>Break</strong></td>
+          <td></td>
+          <td>5 min</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Part III: From Theory to Scientific Applications</strong>
+            <ol class="plain-list">
+              <li>Efficient Methods for Solving Inverse Problems</li>
+              <li>Generalizability of Learned Image Priors</li>
+              <li>Controllable Generation</li>
+            </ol>
+          </td>
+          <td>Liyue Shen</td>
+          <td>45 min</td>
+          <td><a href="slides/part3.pdf" target="_blank">PDF</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
-
+  
   <section id="speakers" class="section">
     <h2>Speakers</h2>
     <div class="speakers">
