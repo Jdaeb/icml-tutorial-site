@@ -199,6 +199,20 @@
     .section {
       margin-top: 100px;
     }
+
+    .figure {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    
+    .figure img {
+      max-width: 100%;
+      width: 100%;
+      max-height: 70vh;
+      height: auto;
+      object-fit: contain;
+    }
     
     @media screen and (max-width: 768px) {
       .main {
@@ -253,7 +267,7 @@
     <p>In response to growing concerns about the reliability and transparency of generative AI models, this tutorial—building on a <a href="https://cpal.cc/tutorial_info/">joint tutorial</a> by the organizers at <a href="https://cpal.cc/">CPAL'25</a> (Stanford)—offers a timely introduction to the theoretical principles governing diffusion models. We will focus on three core aspects: <strong>generalization</strong>, <strong>sampling efficiency</strong>, and <strong>scientific applications</strong>. Drawing on recent advances, the tutorial will highlight how <strong>low-dimensional structures</strong> in both data and models can be exploited to address key challenges in generalization, fast sampling convergence, and controllability.</p>
     <p>Specifically, we will examine how diffusion models adaptively learn underlying data distributions, how to accelerate convergence during sampling, and how to characterize the intrinsic properties of the learned denoiser. These theoretical insights will then be connected to practical advances, demonstrating how to harness them for real-world scientific applications.</p>
     <div class="figure">
-      <img src="images/index.png" alt="Abstract">
+      <img src="images/index.png" alt="Abstract Diagram">
     </div>
     <p>Specifically, the tutorial will cover the following:</p>
     <p><strong>(i) Generalization:</strong> We begin with an introduction to diffusion models, followed by a comprehensive study of their generalization: when and why they can learn low-dimensional target structures, how sample complexity scales with intrinsic data dimension, and how they transition from memorization to generalization. We also introduce a probability flow-based metric to quantify generalization and highlight several intriguing behaviors observed during training.</p>
