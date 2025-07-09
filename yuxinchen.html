@@ -156,6 +156,20 @@
     .collapsed img.logo-toggle {
       display: block;
     }
+
+    .figure {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    
+    .figure img {
+      max-width: 100%;
+      width: 100%;
+      max-height: 70vh;
+      height: auto;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
@@ -178,8 +192,7 @@
   <img class="profile" src="https://yuxinchen2020.github.io/images/photo_Dec2019.jpg" alt="Qing Qu">
   <p><strong>Yuxin Chen (yuxinc@wharton.upenn.edu)</strong> is a professor of statistics and of electrical and systems engineering at the University of Pennsylvania (UPenn). Before joining UPenn, he was an assistant professor of electrical and computer engineering at Princeton. He completed his Ph.D. in Electrical Engineering at Stanford University, and was also a postdoc scholar at Stanford Statistics. Dr. Chen’s expertise includes diffusion models, reinforcement learning theory, high-dimensional statistics, optimization, statistical learning theory, and information theory. His research accomplishments have been recognized by the Alfred P. Sloan Fellowship, the SIAM Imaging Science Best Paper Prize, the ICCM Best Paper Award (Gold Medal), the IEEE Transactions on Power Electronics Prize Paper Award (first place), and he was selected as a finalist for the Best Paper Prize for Young Researchers in Continuous Optimization. In addition, he has also received the Google Research Scholar Award and the Amazon Research Award. He has won six teaching awards and a Princeton Graduate Mentoring Award.</p>
 
-  <section class="section">
-  <h2>Dr. Chen’s Related Work and Experience:</h2>
+  <p><strong>Dr. Chen’s Related Work and Experience:</strong></p>
   <p> Dr. Chen’s recent work [7–10, 20, 21] develops the state-of-the-art convergence theory for diffusion models. For instance, his work [7] provides the
 first sharp convergence guarantees for the probability flow ODE sampler, while his work [21] is the first work that unveils the DDIM sampler’s ability to adapt to unknown low-dimensional structure of the target data distribution. Dr. Chen has presented a number of tutorials in conferences and workshops like SIGMETRICS [22], Joint Statistical Meetings [23], and ISIT [24].</p>
 
@@ -191,7 +204,7 @@ first sharp convergence guarantees for the probability flow ODE sampler, while h
 
   <section class="section">
     <h2>Papers</h2>
-    <ul>
+    <ol>
     <li>
       Jiadong Liang, Zhihan Huang, Yuxin Chen, 
       <em>“Low-Dimensional Adaptation of Diffusion Models: Convergence in Total Variation,”</em> 
@@ -242,7 +255,7 @@ first sharp convergence guarantees for the probability flow ODE sampler, while h
       <a href="https://arxiv.org/abs/2306.09251" target="_blank">Preprint</a> – 
       <a href="https://yuxinchen2020.github.io/publications/DiffusionSGM.pdf" target="_blank">PDF</a>
     </li>
-  </ul>
+  </ol>
 </section>
 </main>
 
