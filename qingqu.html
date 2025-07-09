@@ -154,19 +154,39 @@
     .collapsed img.logo-toggle {
       display: block;
     }
+
+    .nav-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
   </style>
 </head>
 <body>
 <div class="sidebar" id="sidebar">
   <img src="https://icml.cc/static/core/img/icml-navbar-logo.svg" class="logo" onclick="toggleSidebar()" alt="ICML Logo">
   <nav>
-    <a href="index.html">🏠 <span>Home</span></a>
-    <a href="index.html#schedule">🗓 <span>Schedule</span></a>
-    <a href="index.html#speakers">🧑‍🏫 <span>Speakers</span></a>
+    <a href="index.html">
+      <img src="images/home.png" alt="Home" class="nav-icon"> <span>Home</span>
+    </a>
+    <a href="index.html#schedule">
+      <img src="images/schedule.png" alt="Schedule" class="nav-icon"> <span>Schedule</span>
+    </a>
+    <a href="index.html#speakers">
+      <img src="images/speakers.png" alt="Speakers" class="nav-icon"> <span>Speakers</span>
+    </a>
     <hr>
-    <a href="qingqu.html">👨‍🔬 <span>Qing Qu</span></a>
-    <a href="yuxinchen.html">👨‍🏫 <span>Yuxin Chen</span></a>
-    <a href="liyueshen.html">👩‍🏫 <span>Liyue Shen</span></a>
+    <a href="qingqu.html">
+      <img src="images/presenters.png" alt="Qing Qu" class="nav-icon"> <span>Qing Qu</span>
+    </a>
+    <a href="yuxinchen.html">
+      <img src="images/presenters.png" alt="Yuxin Chen" class="nav-icon"> <span>Yuxin Chen</span>
+    </a>
+    <a href="liyueshen.html">
+      <img src="images/presenters.png" alt="Liyue Shen" class="nav-icon"> <span>Liyue Shen</span>
+    </a>
   </nav>
 </div>
 
