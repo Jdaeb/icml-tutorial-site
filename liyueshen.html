@@ -132,17 +132,23 @@
     }
     .figure {
       display: flex;
-      gap: 20px;
       justify-content: center;
-      margin-top: 40px;
+      margin: 40px 0;
     }
+    
     .figure img {
+      width: 100%;
       max-width: 50%;
-      width: auto;
-      max-height: 50vh;
       height: auto;
-      border-radius: 4px;
       object-fit: contain;
+      padding: 0 10px;
+    }
+    
+    /* For smaller screens like phones */
+    @media (max-width: 768px) {
+      .figure img {
+        max-width: 90%;
+      }
     }
     .papers {
       margin-top: 40px;
