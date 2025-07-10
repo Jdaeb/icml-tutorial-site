@@ -214,13 +214,18 @@
       justify-content: center;
       margin: 40px 0;
     }
-    
     .figure img {
+      width: 100%;
       max-width: 50%;
-      width: auto;
-      max-height: 50vh;
       height: auto;
       object-fit: contain;
+      padding: 0 10px;
+    }
+    /* For smaller screens like phones */
+    @media (max-width: 768px) {
+      .figure img {
+        max-width: 90%;
+      }
     }
 
     .nav-icon {
@@ -388,7 +393,7 @@
       <div class="speaker">
         <img src="https://yuxinchen2020.github.io/images/photo_Dec2019.jpg" alt="Yuxin Chen">
         <div class="speaker-text">
-          <a href="https://yuxinchen2020.github.io/" target="_blank">Yuxin Chen</a>
+          <a href="images/yuxin_profile.png" target="_blank">Yuxin Chen</a>
           <span class="role">University of Pennsylvania<br>Associate Professor</span>
         </div>
       </div>
