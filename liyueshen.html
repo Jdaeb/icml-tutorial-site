@@ -130,40 +130,44 @@
       margin-left: 20px;
       border-radius: 8px;
     }
-     .figure-row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 40px;
-        margin: 40px 0;
-        align-items: flex-start; /* Align captions at same vertical start */
-      }
-      
+    .figure-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 40px 0;
+      align-items: flex-start; /* Ensure caption alignment */
+    }
+    
+    .figure-block {
+      width: 25%;
+      max-width: 400px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .figure-block img {
+      height: auto;
+      max-height: 250px;
+      width: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 480px) {
       .figure-block {
-        width: 25%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 35%;
       }
-      
+    
       .figure-block img {
-        max-height: 250px;         /* Allows responsiveness, no fixed height */
-        width: auto;
-        object-fit: contain;
-        margin-bottom: 10px;
-        display: block;
+        max-height: 160px;
       }
-      
-      @media (max-width: 768px) {
-        .figure-block {
-          width: 35%;
-        }
-      
-        .figure-block img {
-          max-height: 160px;
-        }
-      }
+    }
     .papers {
       margin-top: 40px;
     }
