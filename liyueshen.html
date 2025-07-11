@@ -132,42 +132,34 @@
     }
     .figure-row {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 40px;
       margin: 40px 0;
-      align-items: flex-start; /* Ensure caption alignment */
     }
     
     .figure-block {
-      width: 25%;
-      max-width: 400px;
-      text-align: center;
+      max-width: 25%;
+      flex: 1 1 250px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     
     .figure-block img {
-      height: auto;
-      max-height: 250px;
       width: 100%;
-      max-width: 100%;
+      height: auto;
       object-fit: contain;
-      margin-bottom: 10px;
       display: block;
+      margin-bottom: 10px;
     }
     
-    /* Mobile responsiveness */
     @media (max-width: 480px) {
       .figure-block {
-        width: 35%;
-      }
-    
-      .figure-block img {
-        max-height: 160px;
+        max-width: 35%;
       }
     }
+
     .papers {
       margin-top: 40px;
     }
@@ -324,6 +316,23 @@ function toggleSidebar() {
   sidebar.classList.toggle('collapsed');
   document.querySelector('.main').classList.toggle('collapsed');
 }
+
+  window.addEventListener('load', () => {
+    const img1 = document.getElementById('img1');
+    const img2 = document.getElementById('img2');
+
+    if (img1 && img2) {
+      const height1 = img1.clientHeight;
+      const height2 = img2.clientHeight;
+
+      // If img2 is shorter, scale it up proportionally
+      if (height2 < height1) {
+        const scaleFactor = height1 / height2;
+        img2.style.transform = `scale(${scaleFactor})`;
+        img2.style.transformOrigin = 'top left';
+      }
+    }
+  });  
 </script>
 </body>
 </html>
